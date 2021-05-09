@@ -1107,14 +1107,6 @@ int CDIL_CAN_IXXAT_VCI::VciDeviceInfoAddToArray(int iStartPosArray, VCIDEVICEINF
                             //strcpy_s( sSelHwInterface[iStartPosArray].m_acDescription, MAX_CHAR_LONG, "Intel 82C200" );
                             sSelHwInterface[iStartPosArray].m_acDescription = "Intel 82C200";
                             break;
-                        case CAN_CTRL_82C90:
-                            //strcpy_s( sSelHwInterface[iStartPosArray].m_acDescription, MAX_CHAR_LONG, "Intel 82C90" );
-                            sSelHwInterface[iStartPosArray].m_acDescription = "Intel 82C90";
-                            break;
-                        case CAN_CTRL_82C92:
-                            //strcpy_s( sSelHwInterface[iStartPosArray].m_acDescription, MAX_CHAR_LONG, "Intel 82C92" );
-                            sSelHwInterface[iStartPosArray].m_acDescription = "Intel 82C92";
-                            break;
                         case CAN_CTRL_SJA1000:
                             //strcpy_s( sSelHwInterface[iStartPosArray].m_acDescription, MAX_CHAR_LONG, "Philips SJA 1000" );
                             sSelHwInterface[iStartPosArray].m_acDescription = "Philips SJA 1000";
@@ -1126,10 +1118,6 @@ int CDIL_CAN_IXXAT_VCI::VciDeviceInfoAddToArray(int iStartPosArray, VCIDEVICEINF
                         case CAN_CTRL_TOUCAN:
                             //strcpy_s( sSelHwInterface[iStartPosArray].m_acDescription, MAX_CHAR_LONG, "Motorola TOUCAN" );
                             sSelHwInterface[iStartPosArray].m_acDescription = "Motorola TOUCAN";
-                            break;
-                        case CAN_CTRL_IFI:
-                            //strcpy_s( sSelHwInterface[iStartPosArray].m_acDescription, MAX_CHAR_LONG, "IFI-CAN" );
-                            sSelHwInterface[iStartPosArray].m_acDescription = "IFI-CAN";
                             break;
                         default:
                             //strcpy_s( sSelHwInterface[iStartPosArray].m_acDescription, MAX_CHAR_LONG, _("unknown CAN controller") );

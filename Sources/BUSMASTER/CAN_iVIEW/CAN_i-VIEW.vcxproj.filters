@@ -71,7 +71,4 @@
     <Image Include="res\bmp_net.bmp" />
     <Image Include="res\iview.bmp" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="CAN_i-VIEW_Resource.h" />
-  </ItemGroup>
 </Project>

@@ -22,6 +22,7 @@
     <ProjectGuid>{B3C78624-42F9-4A8D-9572-16D17F52DC14}</ProjectGuid>
     <RootNamespace>CAN_Monitor</RootNamespace>
     <Keyword>MFCProj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='busmaster_debug|Win32'" Label="Configuration">
@@ -35,13 +36,13 @@
     <ConfigurationType>Application</ConfigurationType>
     <UseOfMfc>Dynamic</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v120_xp</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseOfMfc>Dynamic</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v120_xp</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
     <PlatformToolset>v120_xp</PlatformToolset>
@@ -544,7 +545,6 @@ copy ".\Res\Splsh16.bmp" "$(SolutionDir)\bin\$(OutDir)Splsh16.bmp"
     <ClCompile Include="J1939TimeOutCfg.cpp" />
     <ClCompile Include="LINBusStatisticsDlg.cpp" />
     <ClCompile Include="LINSignalExtractor.cpp" />
-    
     <ClCompile Include="MainFrm.cpp">
       <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -1002,7 +1002,6 @@ copy ".\Res\Splsh16.bmp" "$(SolutionDir)\bin\$(OutDir)Splsh16.bmp"
     <ClInclude Include="LINBusStatisticsDlg.h" />
     <ClInclude Include="LinChannelParam.h" />
     <ClInclude Include="LINSignalExtractor.h" />
-    
     <ClInclude Include="MainFrm.h" />
     <ClInclude Include="MDIChildBase.h" />
     <ClInclude Include="MessageAttrib.h" />
