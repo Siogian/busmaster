@@ -21,13 +21,13 @@
     <UseOfMfc>Dynamic</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseOfMfc>Dynamic</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -157,15 +157,15 @@ exit 0
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ASC_LOG_Lexer.c;%(Outputs)</Outputs>
     </CustomBuild>
     <CustomBuild Include="Asc_Log_Parser.y">
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">set BISON_SIMPLE=..\..\..\..\Tools\bison\bison.simple
-..\..\..\..\Tools\bison\bison.exe -d --output=Asc_Log_Parser.c "%(FullPath)"
-exit 0
-</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">set BISON_SIMPLE=..\..\..\..\Tools\bison.simple
+      ..\..\..\..\Tools\bison.exe -d --output=Asc_Log_Parser.c "%(FullPath)"
+      exit 0
+      </Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Asc_Log_Parser.c;Asc_Log_Parser.h;%(Outputs)</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">set BISON_SIMPLE=..\..\..\..\Tools\bison\bison.simple
-..\..\..\..\Tools\bison\bison.exe -d --output=Asc_Log_Parser.c "%(FullPath)"
-exit 0
-</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">set BISON_SIMPLE=..\..\..\..\Tools\bison.simple
+      ..\..\..\..\Tools\bison.exe -d --output=Asc_Log_Parser.c "%(FullPath)"
+      exit 0
+      </Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Asc_Log_Parser.c;Asc_Log_Parser.h;%(Outputs)</Outputs>
     </CustomBuild>
   </ItemGroup>

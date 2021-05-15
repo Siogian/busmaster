@@ -148,7 +148,7 @@ Msg_Len:
 	LENGTHTOKEN EQUAL NUMBER
 	{
 		//$$ = $3;
-		free($3)
+		free($3);
 	}
 Bit_Count:
 	BITCOUNTTOKEN EQUAL NUMBER

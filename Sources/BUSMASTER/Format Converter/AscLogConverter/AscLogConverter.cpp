@@ -23,6 +23,7 @@
  */
 
 /* Project includes */
+#include <locale>
 #include "AscLogConverter.h"
 
 extern "C" int nConvertFile(FILE* fpInputFile, FILE* fpOutputFile);

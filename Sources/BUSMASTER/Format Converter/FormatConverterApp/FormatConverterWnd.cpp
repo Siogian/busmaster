@@ -1,7 +1,7 @@
 // FormatConverterWnd.cpp : implementation file
 //
 
-
+#include <locale>
 #include "FormatConverterWnd.h"
 #include "DefConverterPage.h"
 #include <HtmlHelp.h>
